@@ -1,0 +1,245 @@
+/* Simple CSS for my HTML review website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #30336b;
+    color: white;
+    padding: 20px;
+}
+
+.header-inner, main, .footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand-mark {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: #5558a5;
+    border-radius: 6px;
+}
+
+.brand small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.nav-bar {
+    margin-top: 15px;
+    border-top: 1px solid #777;
+}
+
+.nav-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.nav-inner a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 7px 9px;
+}
+
+.nav-inner a:hover, .nav-inner a.active {
+    background-color: #5558a5;
+}
+
+main {
+    padding: 25px 20px;
+    min-height: 65vh;
+}
+
+h1, h2, h3 {
+    color: #25265f;
+}
+
+.hero {
+    padding: 20px 0;
+}
+
+.eyebrow {
+    color: #4546a5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.lead, .muted {
+    color: #555;
+}
+
+.button, .demo-button {
+    display: inline-block;
+    background-color: #595be2;
+    color: white;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card, .content-card {
+    display: block;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+.card {
+    flex: 1 1 240px;
+    color: #222;
+    text-decoration: none;
+}
+
+.card-icon {
+    font-size: 24px;
+}
+
+.card-link {
+    color: #4546a5;
+    font-weight: bold;
+}
+
+.tag-pill {
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.attribute-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 15px 0;
+}
+
+.attribute-table th, .attribute-table td {
+    border: 1px solid #ccc;
+    padding: 9px;
+    text-align: left;
+}
+
+.attribute-table th {
+    background-color: #e8e9ff;
+}
+
+pre {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.result-box, .media-demo {
+    background-color: #f7f7ff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.callout {
+    background-color: #eafaf7;
+    padding: 12px;
+    border-left: 4px solid #19a994;
+}
+
+.form-demo {
+    max-width: 450px;
+}
+
+.form-demo label {
+    display: block;
+    margin: 10px 0;
+}
+
+.form-demo input, .form-demo select, .form-demo textarea {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.quiz-section {
+    margin-top: 25px;
+}
+
+.quiz-question {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.quiz-question legend {
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.answer-key {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.answer-key summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.site-footer {
+    background-color: #25265f;
+    color: white;
+    padding: 20px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .nav-inner a {
+        padding: 6px;
+    }
+    main {
+        padding: 15px;
+    }
+    .attribute-table {
+        font-size: 14px;
+    }
+}

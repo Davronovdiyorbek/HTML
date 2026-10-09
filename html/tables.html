@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A practical guide to HTML tags, attributes, and examples.">
+<title>HTML tables | HTML Review Guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>HTML Review Guide<small>Student web project</small></span></a></div>
+<div class="nav-bar"><nav class="nav-inner" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="text.html">Text</a>
+<a href="links.html">Links</a>
+<a href="lists.html">Lists</a>
+<a href="tables.html" class="active" aria-current="page">Tables</a>
+<a href="forms.html">Forms</a>
+<a href="media.html">Multimedia</a>
+<a href="semantic.html">Semantic</a>
+<a href="metadata.html">Metadata</a></nav></div></header>
+<main><section class="hero"><span class="eyebrow">PAGE 5 · TABLES</span><h1>HTML tables</h1><p class="lead">Tables present information that is naturally organized into rows and columns</p></section><section class="content-card"><h2><span class="tag-pill">&lt;table, tr, td&gt;</span></h2><h3>Definition</h3><p>A table contains rows (tr) and data cells (td).</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>id</code></td><td>Unique identifier.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;Structure&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;CSS&lt;/td&gt;&lt;td&gt;Style&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><table class="attribute-table"><tr><td>HTML</td><td>Structure</td></tr><tr><td>CSS</td><td>Style</td></tr></table></div></section><section class="content-card"><h2><span class="tag-pill">&lt;th, caption&gt;</span></h2><h3>Definition</h3><p>The th tag marks a header cell; caption provides a table title.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>scope</code></td><td>Identifies row or column header scope.</td></tr><tr><td><code>colspan</code></td><td>Spans multiple columns.</td></tr><tr><td><code>rowspan</code></td><td>Spans multiple rows.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;table&gt;
+  &lt;caption&gt;Study topics&lt;/caption&gt;
+  &lt;tr&gt;&lt;th scope=&quot;col&quot;&gt;Topic&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Goal&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;HTML&lt;/td&gt;&lt;td&gt;Structure&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><table class="attribute-table"><caption>Study topics</caption><tr><th>Topic</th><th>Goal</th></tr><tr><td>HTML</td><td>Structure</td></tr></table></div></section><a class="button" href="index.html">← Back to home</a></main>
+<section class="content-card quiz-section" id="quick-quiz">
+  <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+  <h2>HTML Tables Quiz</h2>
+  <p class="muted">Choose one answer for each question. When you finish, open the answer key below.</p>
+  <form class="quiz-form">
+    <fieldset class="quiz-question"><legend><strong>1. Which tag defines a table row?</strong></legend>
+      <label><input type="radio" name="q1" value="a"> <code>&lt;td&gt;</code></label>
+      <label><input type="radio" name="q1" value="b"> <code>&lt;tr&gt;</code></label>
+      <label><input type="radio" name="q1" value="c"> <code>&lt;th&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>2. Which tag defines a regular data cell?</strong></legend>
+      <label><input type="radio" name="q2" value="a"> <code>&lt;td&gt;</code></label>
+      <label><input type="radio" name="q2" value="b"> <code>&lt;tc&gt;</code></label>
+      <label><input type="radio" name="q2" value="c"> <code>&lt;row&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>3. Which tag marks a header cell?</strong></legend>
+      <label><input type="radio" name="q3" value="a"> <code>&lt;theadcell&gt;</code></label>
+      <label><input type="radio" name="q3" value="b"> <code>&lt;th&gt;</code></label>
+      <label><input type="radio" name="q3" value="c"> <code>&lt;header&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>4. Which element groups a table body?</strong></legend>
+      <label><input type="radio" name="q4" value="a"> <code>&lt;tbody&gt;</code></label>
+      <label><input type="radio" name="q4" value="b"> <code>&lt;body&gt;</code></label>
+      <label><input type="radio" name="q4" value="c"> <code>&lt;tablebody&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>5. Which attribute lets a cell span multiple columns?</strong></legend>
+      <label><input type="radio" name="q5" value="a"> <code>rowspan</code></label>
+      <label><input type="radio" name="q5" value="b"> <code>colspan</code></label>
+      <label><input type="radio" name="q5" value="c"> <code>spanrows</code></label>
+    </fieldset>
+  </form>
+  <details class="answer-key">
+    <summary>Show answers</summary>
+    <ol>
+      <li>Question 1: <strong>B</strong></li>
+      <li>Question 2: <strong>A</strong></li>
+      <li>Question 3: <strong>B</strong></li>
+      <li>Question 4: <strong>A</strong></li>
+      <li>Question 5: <strong>B</strong></li>
+    </ol>
+  </details>
+</section>
+<footer class="site-footer"><div class="footer-inner"><p><strong>HTML Review Guide</strong> · Lab Work 3</p><p>Semantic HTML · Shared external CSS</p></div></footer>
+</body></html>

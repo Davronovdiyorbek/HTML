@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A practical guide to HTML tags, attributes, and examples.">
+<title>Semantic and layout tags | HTML Review Guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>HTML Review Guide<small>Student web project</small></span></a></div>
+<div class="nav-bar"><nav class="nav-inner" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="text.html">Text</a>
+<a href="links.html">Links</a>
+<a href="lists.html">Lists</a>
+<a href="tables.html">Tables</a>
+<a href="forms.html">Forms</a>
+<a href="media.html">Multimedia</a>
+<a href="semantic.html" class="active" aria-current="page">Semantic</a>
+<a href="metadata.html">Metadata</a></nav></div></header>
+<main><section class="hero"><span class="eyebrow">PAGE 8 · SEMANTIC HTML</span><h1>Semantic and layout tags</h1><p class="lead">Semantic elements describe page regions and make structure easier to understand</p></section><section class="content-card"><h2><span class="tag-pill">&lt;header, nav, footer&gt;</span></h2><h3>Definition</h3><p>Identify introductory content, navigation, and footer information.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>aria-label</code></td><td>Accessible name for a region.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;header&gt;Site title&lt;/header&gt;
+&lt;nav aria-label=&quot;Main navigation&quot;&gt;Home · About&lt;/nav&gt;
+&lt;footer&gt;© 2026&lt;/footer&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><div class="media-demo"><header><strong>Site title</strong></header><nav>Home · About</nav><footer>© 2026</footer></div></div></section><section class="content-card"><h2><span class="tag-pill">&lt;main, section, article&gt;</span></h2><h3>Definition</h3><p>Mark main content, a thematic section, and a self-contained composition.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>aria-labelledby</code></td><td>Associates a region with a heading ID.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;main&gt;
+  &lt;section&gt;&lt;h2&gt;News&lt;/h2&gt;
+    &lt;article&gt;Latest update&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><main class="media-demo"><section><h3>News</h3><article>Latest update</article></section></main></div></section><section class="content-card"><h2><span class="tag-pill">&lt;div, span&gt;</span></h2><h3>Definition</h3><p>Generic containers with no built-in semantic meaning.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>data-*</code></td><td>Custom data attributes.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;div class=&quot;card&quot;&gt;A block with &lt;span&gt;inline text&lt;/span&gt;.&lt;/div&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><div class="card">A block with <span class="tag-pill">inline text</span>.</div></div></section><a class="button" href="index.html">← Back to home</a></main>
+<section class="content-card quiz-section" id="quick-quiz">
+  <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+  <h2>Semantic HTML Quiz</h2>
+  <p class="muted">Choose one answer for each question. When you finish, open the answer key below.</p>
+  <form class="quiz-form">
+    <fieldset class="quiz-question"><legend><strong>1. Which element contains introductory content?</strong></legend>
+      <label><input type="radio" name="q1" value="a"> <code>&lt;intro&gt;</code></label>
+      <label><input type="radio" name="q1" value="b"> <code>&lt;header&gt;</code></label>
+      <label><input type="radio" name="q1" value="c"> <code>&lt;top&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>2. Which element contains main page content?</strong></legend>
+      <label><input type="radio" name="q2" value="a"> <code>&lt;main&gt;</code></label>
+      <label><input type="radio" name="q2" value="b"> <code>&lt;bodytext&gt;</code></label>
+      <label><input type="radio" name="q2" value="c"> <code>&lt;section-main&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>3. Which element represents navigation links?</strong></legend>
+      <label><input type="radio" name="q3" value="a"> <code>&lt;navigate&gt;</code></label>
+      <label><input type="radio" name="q3" value="b"> <code>&lt;nav&gt;</code></label>
+      <label><input type="radio" name="q3" value="c"> <code>&lt;links&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>4. Which element is for self-contained content such as a post?</strong></legend>
+      <label><input type="radio" name="q4" value="a"> <code>&lt;article&gt;</code></label>
+      <label><input type="radio" name="q4" value="b"> <code>&lt;aside&gt;</code></label>
+      <label><input type="radio" name="q4" value="c"> <code>&lt;span&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>5. Which element commonly contains copyright information?</strong></legend>
+      <label><input type="radio" name="q5" value="a"> <code>&lt;footer&gt;</code></label>
+      <label><input type="radio" name="q5" value="b"> <code>&lt;bottom&gt;</code></label>
+      <label><input type="radio" name="q5" value="c"> <code>&lt;end&gt;</code></label>
+    </fieldset>
+  </form>
+  <details class="answer-key">
+    <summary>Show answers</summary>
+    <ol>
+      <li>Question 1: <strong>B</strong></li>
+      <li>Question 2: <strong>A</strong></li>
+      <li>Question 3: <strong>B</strong></li>
+      <li>Question 4: <strong>A</strong></li>
+      <li>Question 5: <strong>A</strong></li>
+    </ol>
+  </details>
+</section>
+<footer class="site-footer"><div class="footer-inner"><p><strong>HTML Review Guide</strong> · Lab Work 3</p><p>Semantic HTML · Shared external CSS</p></div></footer>
+</body></html>

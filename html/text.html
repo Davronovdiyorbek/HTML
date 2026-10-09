@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A practical guide to HTML tags, attributes, and examples.">
+<title>Text formatting tags | HTML Review Guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>HTML Review Guide<small>Student web project</small></span></a></div>
+<div class="nav-bar"><nav class="nav-inner" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="text.html" class="active" aria-current="page">Text</a>
+<a href="links.html">Links</a>
+<a href="lists.html">Lists</a>
+<a href="tables.html">Tables</a>
+<a href="forms.html">Forms</a>
+<a href="media.html">Multimedia</a>
+<a href="semantic.html">Semantic</a>
+<a href="metadata.html">Metadata</a></nav></div></header>
+<main><section class="hero"><span class="eyebrow">PAGE 2 · TEXT</span><h1>Text formatting tags</h1><p class="lead">Use text elements to create hierarchy, paragraphs, emphasis, and meaningful inline annotations</p></section><section class="content-card"><h2><span class="tag-pill">&lt;h1–h6&gt;</span></h2><h3>Definition</h3><p>Headings define the hierarchy of page sections.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>title</code></td><td>Advisory information.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;h2&gt;A section heading&lt;/h2&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><h2>A section heading</h2></div></section><section class="content-card"><h2><span class="tag-pill">&lt;p&gt;</span></h2><h3>Definition</h3><p>The paragraph tag groups a block of text into a paragraph.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>lang</code></td><td>Language of the content.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;p&gt;HTML gives content a clear structure.&lt;/p&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><p>HTML gives content a clear structure.</p></div></section><section class="content-card"><h2><span class="tag-pill">&lt;strong, em&gt;</span></h2><h3>Definition</h3><p>These tags mark important text and emphasized text.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>id</code></td><td>Unique identifier.</td></tr><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>title</code></td><td>Additional information.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; practice &lt;em&gt;every day&lt;/em&gt;.&lt;/p&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><p><strong>Important:</strong> practice <em>every day</em>.</p></div></section><section class="content-card"><h2><span class="tag-pill">&lt;br, hr&gt;</span></h2><h3>Definition</h3><p>The br tag inserts a line break; hr represents a thematic break.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>class</code></td><td>CSS class names.</td></tr><tr><td><code>id</code></td><td>Unique identifier.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;p&gt;First line&lt;br&gt;Second line&lt;/p&gt;&lt;hr&gt;&lt;p&gt;New topic&lt;/p&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><p>First line<br>Second line</p><hr><p>New topic</p></div></section><a class="button" href="index.html">← Back to home</a></main>
+<section class="content-card quiz-section" id="quick-quiz">
+  <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+  <h2>Text Elements Quiz</h2>
+  <p class="muted">Choose one answer for each question. When you finish, open the answer key below.</p>
+  <form class="quiz-form">
+    <fieldset class="quiz-question"><legend><strong>1. Which tag defines a paragraph?</strong></legend>
+      <label><input type="radio" name="q1" value="a"> <code>&lt;para&gt;</code></label>
+      <label><input type="radio" name="q1" value="b"> <code>&lt;p&gt;</code></label>
+      <label><input type="radio" name="q1" value="c"> <code>&lt;text&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>2. Which tag marks the most important heading?</strong></legend>
+      <label><input type="radio" name="q2" value="a"> <code>&lt;h1&gt;</code></label>
+      <label><input type="radio" name="q2" value="b"> <code>&lt;h6&gt;</code></label>
+      <label><input type="radio" name="q2" value="c"> <code>&lt;header&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>3. Which element gives text strong importance?</strong></legend>
+      <label><input type="radio" name="q3" value="a"> <code>&lt;b&gt;</code></label>
+      <label><input type="radio" name="q3" value="b"> <code>&lt;strong&gt;</code></label>
+      <label><input type="radio" name="q3" value="c"> <code>&lt;big&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>4. Which tag emphasizes text, usually in italics?</strong></legend>
+      <label><input type="radio" name="q4" value="a"> <code>&lt;em&gt;</code></label>
+      <label><input type="radio" name="q4" value="b"> <code>&lt;i-only&gt;</code></label>
+      <label><input type="radio" name="q4" value="c"> <code>&lt;italic&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>5. Which tag inserts a line break?</strong></legend>
+      <label><input type="radio" name="q5" value="a"> <code>&lt;break&gt;</code></label>
+      <label><input type="radio" name="q5" value="b"> <code>&lt;lb&gt;</code></label>
+      <label><input type="radio" name="q5" value="c"> <code>&lt;br&gt;</code></label>
+    </fieldset>
+  </form>
+  <details class="answer-key">
+    <summary>Show answers</summary>
+    <ol>
+      <li>Question 1: <strong>B</strong></li>
+      <li>Question 2: <strong>A</strong></li>
+      <li>Question 3: <strong>B</strong></li>
+      <li>Question 4: <strong>A</strong></li>
+      <li>Question 5: <strong>C</strong></li>
+    </ol>
+  </details>
+</section>
+<footer class="site-footer"><div class="footer-inner"><p><strong>HTML Review Guide</strong> · Lab Work 3</p><p>Semantic HTML · Shared external CSS</p></div></footer>
+</body></html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A practical guide to HTML tags, attributes, and examples.">
+<title>Links, images, audio & video | HTML Review Guide</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark">&lt;/&gt;</span><span>HTML Review Guide<small>Student web project</small></span></a></div>
+<div class="nav-bar"><nav class="nav-inner" aria-label="Main navigation"><a href="index.html">Home</a>
+<a href="text.html">Text</a>
+<a href="links.html" class="active" aria-current="page">Links</a>
+<a href="lists.html">Lists</a>
+<a href="tables.html">Tables</a>
+<a href="forms.html">Forms</a>
+<a href="media.html">Multimedia</a>
+<a href="semantic.html">Semantic</a>
+<a href="metadata.html">Metadata</a></nav></div></header>
+<main><section class="hero"><span class="eyebrow">PAGE 3 · LINKS & MEDIA</span><h1>Links, images, audio & video</h1><p class="lead">Connect pages and add media to make web content useful and engaging</p></section><section class="content-card"><h2><span class="tag-pill">&lt;a&gt;</span></h2><h3>Definition</h3><p>The anchor tag creates a hyperlink to another page, file, or location.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>href</code></td><td>URL or page destination.</td></tr><tr><td><code>target</code></td><td>Where to open the destination.</td></tr><tr><td><code>rel</code></td><td>Relationship/security hints.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;a href=&quot;https://example.com&quot;&gt;Visit Example&lt;/a&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><a href="https://example.com">Visit Example</a></div></section><section class="content-card"><h2><span class="tag-pill">&lt;img&gt;</span></h2><h3>Definition</h3><p>The image tag embeds an image in the page.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>src</code></td><td>Path or URL of the image.</td></tr><tr><td><code>alt</code></td><td>Text alternative for accessibility.</td></tr><tr><td><code>width</code></td><td>Display width in pixels.</td></tr><tr><td><code>height</code></td><td>Display height in pixels.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;img src=&quot;images/sample.jpg&quot; alt=&quot;Mountain landscape&quot; width=&quot;240&quot;&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><div class="media-demo">🖼️ Add your image as <code>images/sample.jpg</code> to show it here.</div></div></section><section class="content-card"><h2><span class="tag-pill">&lt;audio, video&gt;</span></h2><h3>Definition</h3><p>These elements embed playable audio and video content.</p><h3>Attributes</h3><table class="attribute-table"><thead><tr><th>Attribute</th><th>Role</th></tr></thead><tbody><tr><td><code>src</code></td><td>Media file URL.</td></tr><tr><td><code>controls</code></td><td>Shows playback controls.</td></tr><tr><td><code>autoplay</code></td><td>Requests automatic playback.</td></tr><tr><td><code>muted</code></td><td>Starts media muted.</td></tr><tr><td><code>loop</code></td><td>Repeats playback.</td></tr></tbody></table><h3>Example (code)</h3><pre><code>&lt;video controls width=&quot;320&quot;&gt;
+  &lt;source src=&quot;images/demo.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre><h3>Example (result)</h3><div class="result-box"><div class="result-label">Browser preview</div><div class="media-demo">🎞️ Add a video file at <code>images/demo.mp4</code> to test playback.</div></div></section><a class="button" href="index.html">← Back to home</a></main>
+<section class="content-card quiz-section" id="quick-quiz">
+  <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+  <h2>Links and Images Quiz</h2>
+  <p class="muted">Choose one answer for each question. When you finish, open the answer key below.</p>
+  <form class="quiz-form">
+    <fieldset class="quiz-question"><legend><strong>1. Which tag creates a hyperlink?</strong></legend>
+      <label><input type="radio" name="q1" value="a"> <code>&lt;a&gt;</code></label>
+      <label><input type="radio" name="q1" value="b"> <code>&lt;linkto&gt;</code></label>
+      <label><input type="radio" name="q1" value="c"> <code>&lt;href&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>2. Which attribute specifies a link destination?</strong></legend>
+      <label><input type="radio" name="q2" value="a"> <code>src</code></label>
+      <label><input type="radio" name="q2" value="b"> <code>href</code></label>
+      <label><input type="radio" name="q2" value="c"> <code>target</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>3. Which tag embeds an image?</strong></legend>
+      <label><input type="radio" name="q3" value="a"> <code>&lt;picturefile&gt;</code></label>
+      <label><input type="radio" name="q3" value="b"> <code>&lt;img&gt;</code></label>
+      <label><input type="radio" name="q3" value="c"> <code>&lt;image&gt;</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>4. Which attribute provides alternative image text?</strong></legend>
+      <label><input type="radio" name="q4" value="a"> <code>alt</code></label>
+      <label><input type="radio" name="q4" value="b"> <code>title</code></label>
+      <label><input type="radio" name="q4" value="c"> <code>name</code></label>
+    </fieldset>
+    <fieldset class="quiz-question"><legend><strong>5. Which target value usually opens a link in a new tab?</strong></legend>
+      <label><input type="radio" name="q5" value="a"> <code>_self</code></label>
+      <label><input type="radio" name="q5" value="b"> <code>_blank</code></label>
+      <label><input type="radio" name="q5" value="c"> <code>_topmost</code></label>
+    </fieldset>
+  </form>
+  <details class="answer-key">
+    <summary>Show answers</summary>
+    <ol>
+      <li>Question 1: <strong>A</strong></li>
+      <li>Question 2: <strong>B</strong></li>
+      <li>Question 3: <strong>B</strong></li>
+      <li>Question 4: <strong>A</strong></li>
+      <li>Question 5: <strong>B</strong></li>
+    </ol>
+  </details>
+</section>
+<footer class="site-footer"><div class="footer-inner"><p><strong>HTML Review Guide</strong> · Lab Work 3</p><p>Semantic HTML · Shared external CSS</p></div></footer>
+</body></html>
